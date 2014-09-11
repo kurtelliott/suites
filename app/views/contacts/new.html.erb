@@ -1,0 +1,68 @@
+<div class="masthead-wrapper contact-masthead">
+	<div class="main-wrapper">
+		<h1 class="masthead-header">we're here for you</h1>
+	</div>
+</div>
+<div style="padding:40px; overflow:hidden;" class="main-wrapper">
+	<p style="text-align:center;" class="subtitle-a">drop us a line, we'll be in touch</p>
+	<div  style="padding-right:20px;" class="contact-container">
+		<form accept-charset="UTF-8" action="/contacts" class="contact-form" id="new_contact" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TefyBwbhqxh4ClnRhMvyD+qPrVZrl93YcmLpHo93v+g=" /></div>
+	        <div class="field">
+				<label for="contact_name"><p>Your Name</p></label><br>
+			    <input id="contact_name" name="contact[name]" type="text" />
+			</div>
+			<div class="field">
+			    <label for="contact_email"><p>Your Email</p></label><br>
+			    <input id="contact_email" name="contact[email]" type="text" />
+			</div>
+			<div class="field">
+				<label for="contact_comments"><p>Your Questions or Comments</p></label><br>
+			    <textarea id="contact_comments" name="contact[comments]" type="text"></textarea>
+			</div>
+			<div class="actions">
+			    <input class="submit" name="commit" type="submit" value="send message" />
+			</div>
+		</form>
+	</div>
+	<div style="padding-left:20px;" class="contact-container">
+		<p>Map</p>
+		<div class="contact-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2886.8981324376377!2d-79.3848902!3d43.65028770000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cdec069beb%3A0x214bda1f2b11b1d4!2s133+Richmond+St+W+%23206%2C+Toronto%2C+ON+M5H+3A9!5e0!3m2!1sen!2sca!4v1408646323932" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="contact-container-b">
+			<div class="contact-container-c">
+				<div class="contact-icon office-icon"></div>
+				<p class="contact-subtitle">Our offices</p>
+				<p>133 Richmond St W #206<br> Toronto, Ontario<br>M5H 3A9</p>
+				
+			</div>
+			<div class="contact-container-d">
+				<p>map</p>
+				<a class="map-button" href="https://goo.gl/maps/Y9rh8" target="_blank"><img src="/images/map-button.png"></a>
+			</div>
+		</div>
+		<div style="border:0px;" class="contact-container-b">
+			<div class="contact-container-c">
+				<div class="contact-icon phone-icon"></div>
+				<p class="contact-subtitle">Our phone numbers</p>
+				<p><span style="width:60px; display:inline-block;">Cell:</span>416.504.3379<br><span style="width:60px; display:inline-block;">Office:</span>1.844.808.3379<br><span style="width:60px; display:inline-block;">Fax:</span>1.855.846.9450</p>
+				
+			</div>
+		</div>
+		<!--
+		<div style="border:0px; border-top:1px solid rgb(226,223,218);"class="contact-container-b">
+			<div class="contact-container-c">
+				<div class="contact-icon social-icon"></div>
+				<p class="contact-subtitle">Social media</p>
+				<a href="" style="margin-left:0px;" class="social-icon-square fb"></a>
+				<a href="" class="social-icon-square l-in"></a>
+				<a href="" class="social-icon-square g-plus"></a>
+				<a href="" class="social-icon-square twitter"></a>
+			</div>
+		</div>
+	    -->
+	</div>
+	<% if flash[:success] %>
+  <p id="notice"><%= flash[:success] %></p>
+<% end %>
+</div>

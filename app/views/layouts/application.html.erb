@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>University Suites</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+</head>
+<body>
+	<div>
+    <% if user_signed_in? %>
+        Signed in as <%= current_user.email %>.
+        <%= link_to 'Sign out', destroy_user_session_path %>
+        <%= link_to 'admin panel', '/admin' %>
+    <% else %>
+    <% end %>
+</div>
+<div class="header">
+	<div class="main-wrapper">
+		<div class="nav-container">
+				<a class="nav-button" href="/rates">Rates</a>
+		</div>
+		<div class="nav-container"> 	
+				<a class="nav-button" href="/apply">Apply Now</a>
+		</div>
+		<a class="nav-container logo-box" href="/"> 
+			<p class="logo-text">Financial</p>
+		</a>
+		<div class="nav-container"> 	
+				<a class="nav-button" href="/about">About Us</a>
+		</div>
+		<div class="nav-container"> 	
+				<a class="nav-button" href="/contact">Contact</a>
+		</div>
+	</div>
+</div>
+<%= yield %>
+<div class="footer">
+	<div class="main-wrapper">
+		<div style="width:100%">
+			<p class="footer-rights">CanWise Financial is owned and operated by <a style="color:white;" target="_blank" href="http://www.ratehub.ca/">RateHub.ca</a></p>
+			<p class="footer-address">133 Richmond St W #206 Toronto, ON M5H 3A9</p>
+		</div>
+		<div style="width:100%">
+			<p class="footer-rights">CanWise Inc. Broker #12530 - All rights reserved</p>
+			<a style="padding-left:5px; border-left:1px solid rgb(177,163,145)" href="/contact" class="footer-button">Contact</a>
+			<a style="padding-right:5px;" href="/apply" class="footer-button">Apply Now</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

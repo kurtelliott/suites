@@ -1,0 +1,587 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+a, h1, h2, h3, p, table {
+	font-family: 'Lato', sans-serif;
+}
+h1 {
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:62px;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+/* header */
+
+.header {
+	width:100%;
+	height:100px;
+}
+.main-wrapper {
+	height:100%;
+	width:1024px;
+	margin:0 auto;
+}
+
+.nav-container {
+	display:block;
+	width:168px;
+	height:100px;
+	float:left;
+	position:relative;
+	margin:0 18px;
+}
+.nav-button {
+	bottom:0;
+	position:absolute;
+	color:rgb(35,35,35);
+	background-color:white;
+	text-align:center;
+	display:block;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	text-decoration:none;
+}
+
+.nav-button:hover {
+	border-bottom:4px solid rgb(203,161,33);
+}
+.logo-box {
+	background-color:white;
+	background-image: url(/images/square-logo.png);
+	height: 120px;
+	background-size: 102px 102px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 10px;
+	background-position-y:-2px;
+	text-decoration:none;
+	color:#232323;
+}
+.logo-text {
+	font-weight:600;
+	width:100%;
+	margin:0;
+	position:absolute;
+	bottom:5px;
+	text-align:center;
+	text-decoration:none;
+	color:#282828;
+	font-size:13px;
+}
+
+/* footer */
+
+.footer {
+	padding:40px 5px 5px 5px;
+	background-color:rgb(32,32,32);
+}
+.footer-address {
+	float:right;
+	text-align:right;
+	font-size:12px;
+	width:50%;
+	margin:0;
+	display:inline-block;
+	color:white;
+}
+.footer-rights {
+	margin:0;
+	width:50%;
+	display:inline-block;
+	font-size:10px;
+	color:white;
+}
+.footer-button {
+	color:rgb(177,163,145);
+	float:right;
+	font-size:10px;
+}
+.footer-button:hover {
+	color:rgb(203,161,33);
+}
+
+
+/* index */
+
+.masthead-wrapper {
+	padding-top:100px;
+	width:100%;
+	background-size:cover;
+}
+.index-masthead {
+	height:450px;
+	background-image:url(/images/index.jpg);
+}
+.masthead-header {
+	color:white;
+	text-align:center;
+}
+.apply-button {
+	text-decoration:none;
+	color:white;
+	border: 2px solid white;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-weight:300;
+	width:215px;
+}
+.apply-button:hover {
+	background-color:rgba(203,161,33,0.6);
+}
+.index-content-container {
+	padding-bottom:40px;
+	float:left;
+	width:50%;
+}
+.text-a {
+	font-size:15px;
+	text-align:center;
+}
+.text-b {
+	font-size:15px;
+}
+.subtitle-a {
+	margin:10px 0 0 0;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 38px;
+	color:rgb(209,165,33);
+}
+.index-rates-table {
+	text-transform:uppercase;
+ 	border-spacing: 10px;
+    border-collapse: separate;
+	width:100%;
+}
+.index-rates-table tr {
+	padding:6px 0;
+	height:30px;
+}
+.index-rates-table th {
+	font-weight:400;
+	font-size:20px;
+	color:white;
+	background-color:rgb(32,32,32);
+	text-transform:uppercase;
+}
+.index-rates-table a {
+	text-decoration:none;
+	color: #d1a521;
+	border: 1px solid #939393;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: block;
+	padding: 6px;
+	text-align: center;
+}
+.index-rates-table a:hover {
+	background-color:rgba(203,161,33,0.8);
+	color:white;
+}
+.index-button-b {
+	text-decoration:none;
+	color: #d1a521;
+	border: 1px solid #939393;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 18px;
+	display: block;
+	padding: 6px;
+	text-align: center;
+	width:215px;
+	margin:35px auto 0 auto;
+}
+.index-button-b:hover {
+	background-color:rgba(203,161,33,0.8);
+	color:white;
+}
+.divider {
+	clear:both;
+	height:2px;
+	width:100%;
+	background-color: #E4E4E4;
+}
+.index-content-container-b {
+	width:33%;
+	float:left;
+	padding:40px;
+}
+.subtitle-b {
+	min-height: 60px;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	text-align:center;
+}
+.index-footer {
+	background-color:rgb(229,229,229);
+	width:100%;
+}
+.index-footer-img {
+	padding:24px;
+	float:left;
+}
+
+
+/* contact */
+
+.contact-masthead {
+	height:300px;
+	background-image:url(/images/contact-us.jpg);
+}
+.contact-container {
+	float:left;
+	width:50%;
+}
+.contact-map {
+	height:300px;
+	border:1px solid rgb(226,223,218);
+	border-bottom:0px;
+}
+.contact-container-b {
+	height:120px;
+	width:100%;
+	border:1px solid rgb(226,223,218);
+}
+.contact-subtitle {
+	margin:10px 0;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:18px;
+}
+.contact-container-c {
+	width:75%;
+	height:100%;
+	float:left;
+}
+.contact-icon {
+	width:80px;
+	height:100%;
+	float:left;
+	background-repeat:no-repeat;
+	background-position-y:14px;
+	background-position-x:24px;
+}
+.office-icon {
+	background-image: url(/images/map-pin.png)
+}
+.phone-icon {
+	background-image: url(/images/phone.png)
+}
+.social-icon {
+	background-image: url(/images/social.png)
+}
+.contact-container-d {
+	width:25%;
+	height:100%;
+	float:left;
+}
+.contact-container-d p {
+
+	float:left;
+	line-height:120px;
+	margin:0;
+	color:rgb(209,165,33);
+	text-transform:uppercase;
+	font-size:18px;
+}
+.map-button {
+	height:100%;
+	width:40px;
+	float:right;
+	background-color:rgb(209,165,33);
+}
+.map-button:hover {
+	background-color:#AB8102;
+}
+.map-button img {
+	padding: 48px 12px 0 12px;
+}
+.contact-form textarea, input {
+	width:100%;
+	font: normal 14px Verdana, Tahoma, sans-serif;
+	padding:10px;
+	border:1px solid #939393;
+    outline: 0; 
+}
+	
+.contact-form textarea {
+	height:380px;
+	resize:none;
+}
+.submit {
+	display:block;
+	margin:20px auto;
+	width:250px;
+	padding:12px 0;
+	background-color:white;
+	color:rgb(209,165,33);
+	text-transform:uppercase;
+	border:1px solid #939393;
+	text-align: center;
+	text-decoration: none;
+}
+.submit:hover {
+	cursor:pointer;
+	background-color:rgba(209,165,33,0.7);
+	color:white;
+
+}
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(209,165,33,1);
+  border: 1px solid rgba(209,165,33, 1);
+}
+.social-icon-square {
+	width:40px;
+	float:left;
+	height:40px;
+	border:1px solid rgb(226,223,218);
+	margin:10px;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:block;
+}
+.social-icon-square:hover {
+	background-color:#F1E8CD;
+}
+
+.fb {
+	background-image:url(/images/facebook-logo.png);
+}
+.l-in {
+	background-image:url(/images/linkedin-logo.png);
+}
+.g-plus {
+	background-image:url(/images/g-plus-logo.png);
+}
+.twitter {
+	background-image:url(/images/twitter-logo.png);
+}
+.bio-button {
+	text-decoration: none;
+	color: #d1a521;
+	border: 1px solid #939393;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 10px;
+	display: inline-block;
+	padding: 3px 15px;
+	text-align: center;
+	background-color: white;
+}
+.bio-button:hover {
+	cursor:pointer;
+	background-color:rgba(203,161,33,0.8);
+	color:white;
+}
+
+/* about */
+.about-masthead {
+	height:300px;
+	background-image:url(/images/about-us.jpg);
+}
+
+.profile-photo {
+	background-repeat:no-repeat;
+	height:120px;
+	width:120px;
+	float:left;
+	background-size: cover;
+	margin:20px;
+}
+.profile-a {
+	background-image:url(/images/james.png)
+}
+.profile-b {
+	background-image:url(/images/bryan.png)
+}
+.profile-c {
+	background-image:url(/images/ahjaz.png)
+}
+.profile-d {
+	background-image:url(/images/vince.png)
+}
+.profile-e {
+	background-image:url(/images/peter.png)
+}
+.about-subtitle {
+	margin:10px 0 0 0;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 48px;
+	color:rgb(209,165,33);
+}
+.about-definition {
+	font-weight:bold;
+	font-size:20px;
+	font-weight:400;
+}
+.about-text {
+	font-size:20px;
+	font-weight:300;
+}
+.profile-bio {
+	clear:left;
+	margin:20px;
+	font-size: 14px;
+	display:none;
+}
+.visible {
+	display:block;
+}
+.profile-name {
+	font-size: 24px;
+	color: #d1a521;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom:0px;
+}
+.profile-title {
+	font-size: 14px;
+	display: inline-block;
+	margin: 0px 0px 7px 0px;
+	max-width: 250px;
+}
+.profile-email {
+	color:black;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 20px;
+	font-style: italic;
+}
+/* rates */
+
+.rates-masthead {
+	height:300px;
+	background-image:url(/images/rate.jpg);
+}
+.rates-intro {
+	font-size: 26px;
+	text-align: center;
+	margin: 10px 20px 40px 20px;
+	font-weight: 300;
+}
+.rates-icon {
+	width:140px;
+	height:120px;
+	background-position: center;
+	margin:0 auto;
+	background-repeat: no-repeat;
+
+}
+.choice {
+	background-image:url(/images/tags.png);
+}
+.haggle {
+	background-image:url(/images/checkmark.png);
+}
+.volume {
+	background-image:url(/images/truck.png);
+}
+
+/* apply */
+
+.apply-masthead {
+	height:300px;
+	background-image:url(/images/apply-now.jpg);
+}
+.time {
+	background-image:url(/images/time.png);
+}
+.secure {
+	background-image:url(/images/secure.png);
+}
+.freedom {
+	background-image:url(/images/freedom.png);
+}
+.subtitle-fine {
+	font-style:italic;
+	text-align: center;
+}
+.apply-form textarea, input, select, checkbox {
+	width:100%;
+	font: normal 14px Verdana, Tahoma, sans-serif;
+	padding:10px;
+	border:1px solid #939393;
+    outline: 0; 
+}
+.apply-inner-container {
+	width:50%;
+	float:left;
+	padding-bottom:40px;
+}
+.checkbox-text {
+	text-align:center; 
+}
+.checkbox {
+	width:auto;
+	margin:8px;
+}
+label p {
+	margin:15px 0 5px 0;
+}
+.styled-dropdown select {
+   background: transparent;
+	width: 100%;
+	padding: 10px;
+	line-height: 1.2;
+	border: 0;
+	border-radius: 0;
+	height: 39px;
+	-webkit-appearance: none;
+}
+.styled-dropdown {
+	margin: 2px 0;
+	width: 100%;
+	height: 39px;
+	overflow: hidden;
+	background: url(/images/dropdown-arrow.png) no-repeat;
+	border: 1px solid #939393;
+	background-size: 4%;
+	background-position-x: 398px;
+	background-position-y: 14px;
+}
+
+/* admin */
+.admin-panel {
+	border:1px solid silver;
+	margin:0 auto;
+	width:300px;
+}
+.admin-contact-index tr td {
+	padding:10px;
+}
+.admin-applications-index tr td {
+	padding:10px;
+	font-size:10px;
+}
+.admin-applications-index thead {
+	font-size:10px;
+}
+/* media-queries */
+@media only screen 
+and (max-width : 1024px) {
+	.footer, .masthead-wrapper, .main-wrapper, .index-footer {
+	width:1024px;
+	}
+}
+
+
